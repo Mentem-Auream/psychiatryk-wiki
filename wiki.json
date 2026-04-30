@@ -1,0 +1,628 @@
+{
+  "server": {
+    "name": "psychiatryk",
+    "ip": "psychiatryk.thost.pl",
+    "version": "26.1.2"
+  },
+  "nav": [
+    {
+      "id": "podstawy",
+      "icon": "📘",
+      "label": "Podstawy",
+      "children": [
+        {
+          "id": "start",
+          "label": "Start (dla nowych)"
+        },
+        {
+          "id": "zasady",
+          "label": "Najważniejsze zasady"
+        },
+        {
+          "id": "faq",
+          "label": "FAQ"
+        }
+      ]
+    },
+    {
+      "id": "ekonomia",
+      "icon": "💰",
+      "label": "Ekonomia",
+      "children": [
+        {
+          "id": "timeismoney",
+          "label": "TimeIsMoney"
+        },
+        {
+          "id": "czaszki",
+          "label": "Czaszki"
+        },
+        {
+          "id": "shopchest",
+          "label": "Sklepy"
+        },
+        {
+          "id": "paysign",
+          "label": "PaySign"
+        }
+      ]
+    },
+    {
+      "id": "zycia",
+      "icon": "❤️",
+      "label": "System Żyć",
+      "children": [
+        {
+          "id": "jak-dzialaja-zycia",
+          "label": "Jak działają życia"
+        },
+        {
+          "id": "tiery",
+          "label": "Tiery i limity żyć"
+        },
+        {
+          "id": "smierc",
+          "label": "Konsekwencje śmierci"
+        }
+      ]
+    },
+    {
+      "id": "alkohol",
+      "icon": "🍺",
+      "label": "Alkohol & Napoje (WIP)",
+      "children": [
+        {
+          "id": "przepisy",
+          "label": "jeszcze nie skonczone"
+        }
+      ]
+    }
+  ],
+  "pages": {
+    "start": {
+      "title": "Start",
+      "subtitle": "Wszystko co musisz wiedzieć jako nowy gracz",
+      "icon": "📘",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Witaj na ARIS SMP! To serwer Survival Multiplayer z autorskimi mechanikami. Zanim zaczniesz, przeczytaj ten poradnik — zaoszczędzi Ci sporo problemów."
+        },
+        {
+          "type": "steps",
+          "title": "Pierwsze kroki",
+          "items": [
+            {
+              "step": "01",
+              "title": "Dołącz na serwer",
+              "desc": "Wpisz IP play.arismc.pl w Minecraft Java Edition (wersja 1.20–1.21). Zostaniesz umieszczony w strefie startowej."
+            },
+            {
+              "step": "02",
+              "title": "Przeczytaj zasady",
+              "desc": "Wpisz /rules lub odwiedź sekcję Zasady w tej wiki. Nieznajomość zasad nie chroni przed karą."
+            },
+            {
+              "step": "03",
+              "title": "Wybierz działkę i zacznij grać",
+              "desc": "Znajdź wolne miejsce, zbuduj bazę i zacznij zbierać zasoby. Pilnuj swoich żyć — ich utrata ma konsekwencje!"
+            },
+            {
+              "step": "04",
+              "title": "Zarabiaj i rozwijaj się",
+              "desc": "Za każde 15 minut aktywnej gry dostajesz 20$. Otwórz sklep, handluj z graczami i wchodź w wyższe tiery żyć."
+            }
+          ]
+        }
+      ]
+    },
+    "zasady": {
+      "title": "Zasady",
+      "subtitle": "Przeczytaj zanim zagrasz",
+      "icon": "📜",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Zasady obowiązują wszystkich graczy bez wyjątku. Administracja zastrzega sobie prawo do karania za zachowania niezgodne z duchem serwera, nawet jeśli nie są wprost wymienione poniżej."
+        },
+        {
+          "type": "rules",
+          "items": [
+            {
+              "num": "01",
+              "title": "Szacunek",
+              "desc": "Traktuj innych z szacunkiem. Zakaz mowy nienawiści, obrażania, nękania i spamu — na czacie, tablicach i w nazwach budowli.",
+              "severity": "warn"
+            },
+            {
+              "num": "02",
+              "title": "Zakaz griefingu",
+              "desc": "Niszczenie cudzych budowli, kradzież i podpalanie są surowo zakazane.",
+              "severity": "ban"
+            },
+            {
+              "num": "03",
+              "title": "No cheats",
+              "desc": "Zakaz modów dających przewagę: x-ray, fly, speed, esp. 1. naruszenie: ban 7 dni. 2. naruszenie: ban permanentny.",
+              "severity": "ban"
+            },
+            {
+              "num": "04",
+              "title": "Jedno konto",
+              "desc": "Każdy gracz = jedno konto. Multi-konto = ban obu kont.",
+              "severity": "warn"
+            },
+            {
+              "num": "05",
+              "title": "Spam i reklama",
+              "desc": "Zakaz spamu i reklamowania innych serwerów na czacie.",
+              "severity": "warn"
+            },
+            {
+              "num": "06",
+              "title": "Decyzje adminów są ostateczne",
+              "desc": "Apelacje wyłącznie przez Discord w kanale #odwołania.",
+              "severity": "info"
+            }
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ",
+      "subtitle": "Najczęściej zadawane pytania",
+      "icon": "❓",
+      "sections": [
+        {
+          "type": "faq",
+          "items": [
+            {
+              "q": "Jak działa ekonomia?",
+              "a": "Co 15 minut aktywnej gry dostajesz 20$. Maksymalny dzienny zarobek z TimeIsMoney to 300$ (5 godzin gry). Możesz też zarabiać handlując z graczami."
+            },
+            {
+              "q": "Co to są czaszki?",
+              "a": "Czaszki dostajesz za agresywne zabicie innego gracza. Kara to 200$ przy pierwszej czaszce, każde kolejne zabienie gracza z czaszką kosztuje 150$."
+            },
+            {
+              "q": "Co się dzieje gdy stracę wszystkie życia?",
+              "a": "Dostajesz 30-minutowy ban. Po powrocie zaczynasz od 3 żyć (domyślna wartość startowa). Nowe życia możesz kupić za 150$ każde."
+            }
+          ]
+        }
+      ]
+    },
+    "timeismoney": {
+      "title": "TimeIsMoney",
+      "subtitle": "System zarabiania za grę",
+      "icon": "⏱️",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "TimeIsMoney to system, który nagradza graczy za aktywne spędzanie czasu na serwerze. Granie to zarabianie!"
+        },
+        {
+          "type": "statblock",
+          "items": [
+            {
+              "label": "Wypłata co 15 minut",
+              "value": "20$",
+              "highlight": true
+            },
+            {
+              "label": "Maksymalny dzienny zarobek",
+              "value": "300$",
+              "highlight": true
+            },
+            {
+              "label": "Czas do osiągnięcia limitu",
+              "value": "~5 godzin gry",
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "type": "info",
+          "title": "Ważne zasady",
+          "items": [
+            "Pieniądze są wypłacane automatycznie co 15 minut aktywnej gry.",
+            "AFK (brak aktywności) wstrzymuje wypłaty. Musisz powrócić do gry, aby wznowić zarabianie.",
+            "Po osiągnięciu 300$ dziennie, dalsze granie nie daje już pieniędzy z TimeIsMoney — ale możesz zarabiać poprzez handel.",
+            "Limit resetuje się o północy czasu serwera."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "💡 TimeIsMoney to tylko część zarobków. Prawdziwe pieniądze zarobisz handlując z innymi graczami poprzez ShopChest!"
+        }
+      ]
+    },
+    "czaszki": {
+      "title": "Czaszki",
+      "subtitle": "System kar za agresywną grę",
+      "icon": "💀",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Czaszki to system kar nakładany na graczy, którzy agresywnie zabijają innych. Za każde zabicie gracza zbierasz czaszkę, która wiąże się z karą finansową. System ten promuje przemyślane PvP zamiast bezsensownego zabijania."
+        },
+        {
+          "type": "statblock",
+          "items": [
+            {
+              "label": "Kara za zabicie bez czaszki",
+              "value": "-200$",
+              "highlight": true
+            },
+            {
+              "label": "Kara za zabicie gracza z czaszką",
+              "value": "+150$",
+              "highlight": false
+            }
+          ]
+        },
+        {
+          "type": "rules",
+          "items": [
+            {
+              "num": "❌",
+              "title": "Czaszki nie znikają",
+              "desc": "Raz zdobyta czaszka pozostaje na zawsze. Nie ma automatycznego czyszczenia.",
+              "severity": "warn"
+            },
+            {
+              "num": "💸",
+              "title": "Każde zabienie kosztuje",
+              "desc": "Każde kolejne zabójstwo gracza generuje kosztuje",
+              "severity": "warn"
+            },
+            {
+              "num": "⚠️",
+              "title": "Uważaj na portfel",
+              "desc": "Agresywna gra szybko opróżni Twoje konto. Przemyśl zanim zabijesz!",
+              "severity": "info"
+            }
+          ]
+        }
+      ]
+    },
+    "shopchest": {
+      "title": "Sklepy",
+      "subtitle": "System handlu przez skrzynki, nawet offline",
+      "icon": "📦",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "ShopChest umożliwi handel między graczami przez skrzynki. Wystawiasz towar, inni kupują — bez potrzeby bycia online. System pozwala budować ekonomię opartą na handlu między graczami."
+        },
+        {
+          "type": "steps",
+          "title": "Jak założyć sklep",
+          "items": [
+            {
+              "step": "01",
+              "title": "Postaw skrzynkę",
+              "desc": "Postaw zwykłą skrzynkę tam gdzie chcesz mieć sklep"
+            },
+            {
+              "step": "02",
+              "title": "/sklep create [ilość] [cena kupna] [cena sprzedaży]",
+              "desc": "Po tym poleceniu sklep zostanie utworzony!"
+            },
+            {
+              "step": "03",
+              "title": "Gotowe!",
+              "desc": "pamietaj aby uzupełniać towar w skrzynce!"
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "Typy sklepów",
+          "items": [
+            {
+              "step": "🛒",
+              "title": "Sklep sprzedający",
+              "desc": "Ty sprzedajesz. Gracze płacą i otrzymują przedmioty ze skrzynki."
+            },
+            {
+              "step": "📥",
+              "title": "Sklep skupujący",
+              "desc": "Ty kupujesz od graczy. Gracze wkładają przedmioty i otrzymują pieniądze."
+            },
+            {
+              "step": "🔄",
+              "title": "Sklep mieszany",
+              "desc": "Ustawiasz obie ceny — skrzynka zarówno kupuje jak i sprzedaje ten sam przedmiot."
+            }
+          ]
+        },
+        {
+          "type": "commands",
+          "title": "Komendy",
+          "items": [
+            {
+              "cmd": "/sklep create [ilość] [cena kupna] [cena sprzedaży]",
+              "desc": "Utwórz nowy sklep"
+            },
+            {
+              "cmd": "/sklep remove",
+              "desc": "Usuń sklep (kliknij skrzynkę po wpisaniu)"
+            },
+            {
+              "cmd": "/sklep info",
+              "desc": "Informacje o sklepie"
+            }
+          ]
+        }
+      ]
+    },
+    "paysign": {
+      "title": "PaySign",
+      "subtitle": "Tabliczki płatnicze",
+      "icon": "🪧",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "PaySign pozwala tworzyć tabliczki, które automatycznie pobierają pieniądze od gracza który je kliknie. Idealny sposób na sprzedaż usług i dostępu do różnych funkcji."
+        },
+        {
+          "type": "steps",
+          "title": "Jak stworzyć PaySign",
+          "items": [
+            {
+              "step": "01",
+              "title": "Postaw tabliczkę",
+              "desc": "Postaw zwykłą tabliczkę w swoim terenie."
+            },
+            {
+              "step": "02",
+              "title": "Wpisz format",
+              "desc": "Linia 1: [PaySign]<br>Linia 2: kwota (np. 100)<br>Linia 3: opis usługi<br>Linia 4: Twój nick (wpisuje się automatycznie)"
+            },
+            {
+              "step": "03",
+              "title": "Aktywacja",
+              "desc": "Tabliczka zmienia kolor na zielony. Gotowa do użytku! Klikający gracz zapłaci automatycznie."
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "💡 PaySign idealnie sprawdza się do wynajmu czy dostępu do prywatnych terenów!"
+        }
+      ]
+    },
+    "jak-dzialaja-zycia": {
+      "title": "Jak działają życia",
+      "subtitle": "System żyć na ARIS SMP",
+      "icon": "❤️",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Każdy gracz posiada ograniczoną liczbę żyć, a śmierć ma realne konsekwencje. System żyć dodaje elementu ryzyka do gry i czyni decyzje bardziej ważnymi."
+        },
+        {
+          "type": "statblock",
+          "items": [
+            {
+              "label": "Startowa liczba żyć",
+              "value": "3",
+              "highlight": false
+            },
+            {
+              "label": "Maksymalna liczba żyć (Tier 0)",
+              "value": "3",
+              "highlight": false
+            },
+            {
+              "label": "Cena jednego życia",
+              "value": "150$",
+              "highlight": true
+            }
+          ]
+        },
+        {
+          "type": "rules",
+          "items": [
+            {
+              "num": "☠️",
+              "title": "Każda śmierć",
+              "desc": "Tracisz 1 życie. Wypadają itemy (możesz je odzyskać przez /back). Respawn przy łóżku lub na spawnie.",
+              "severity": "info"
+            },
+            {
+              "num": "⏱️",
+              "title": "0 żyć = ban 30 minut",
+              "desc": "Gdy skończy Ci się żyć, zostajesz zbanowany na 30 minut. Po powrocie zaczynasz od 3 żyć — niezależnie od tego ile miałeś przed banem.",
+              "severity": "ban"
+            },
+            {
+              "num": "🎯",
+              "title": "Przyczyny śmierci",
+              "desc": "Bez względu na przyczynę (mob, gracz, upadek, topienie) — tracisz 1 życie. Każda śmierć liczy się.",
+              "severity": "info"
+            }
+          ]
+        },
+        {
+          "type": "commands",
+          "title": "Komendy",
+          "items": [
+            {
+              "cmd": "/lives",
+              "desc": "Sprawdź aktualne życia"
+            },
+            {
+              "cmd": "/lives buy",
+              "desc": "Kup nowe życie za 150$"
+            },
+            {
+              "cmd": "/back",
+              "desc": "Teleport do miejsca ostatniej śmierci (odzyskaj itemy)"
+            }
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "💡 Dbaj o swoje życia! Unikaj niebezpiecznych sytuacji i nie ryzykuj bez powodu."
+        }
+      ]
+    },
+    "tiery": {
+      "title": "Tiery i limity żyć",
+      "subtitle": "Rozszerzanie maksymalnej liczby żyć",
+      "icon": "📈",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Domyślnie gracz może mieć maksymalnie 3 życia. Aby zwiększyć limit, musisz odblokować kolejne tiery, płacąc za każdy z nich. Im wyższy tier, tym więcej żyć i tym wyższy koszt."
+        },
+        {
+          "type": "steps",
+          "title": "Tabela tierów",
+          "items": [
+            {
+              "step": "0️⃣",
+              "title": "Tier 0 (domyślny)",
+              "desc": "Max żyć: 3<br>Koszt: 0$ (darmowy)"
+            },
+            {
+              "step": "1️⃣",
+              "title": "Tier 1",
+              "desc": "Max żyć: 4<br>Koszt: 150$"
+            },
+            {
+              "step": "2️⃣",
+              "title": "Tier 2",
+              "desc": "Max żyć: 5<br>Koszt łączny: 225$ (+75$)"
+            },
+            {
+              "step": "3️⃣",
+              "title": "Tier 3",
+              "desc": "Max żyć: 6<br>Koszt łączny: 325$ (+100$)"
+            },
+            {
+              "step": "4️⃣",
+              "title": "Tier 4",
+              "desc": "Max żyć: 7<br>Koszt łączny: 450$ (+125$)"
+            },
+            {
+              "step": "5️⃣",
+              "title": "Tier 5",
+              "desc": "Max żyć: 8<br>Koszt łączny: 600$ (+150$)"
+            },
+            {
+              "step": "6️⃣",
+              "title": "Tier 6",
+              "desc": "Max żyć: 9<br>Koszt łączny: 675$ (+75$)"
+            },
+            {
+              "step": "7️⃣",
+              "title": "Tier 7 (maksymalny)",
+              "desc": "Max żyć: 10<br>Koszt łączny: 800$ (+125$)"
+            }
+          ]
+        },
+        {
+          "type": "info",
+          "title": "Ważne informacje",
+          "items": [
+            "Każdy tier zwiększa maksymalną liczbę żyć o 1.",
+            "Tier 7 jest maksymalnym osiągalnym (10 żyć).",
+            "Koszt rośnie wraz z każdym tiarem — im wyższy tier, tym drożej.",
+            "Możesz odblokować tier tylko jeśli masz wystarczającą ilość pieniędzy.",
+            "Odblokowane tiery są stałe — nie można ich stracić po śmierci."
+          ]
+        }
+      ]
+    },
+    "smierc": {
+      "title": "Konsekwencje śmierci",
+      "subtitle": "Co się dzieje gdy giniesz",
+      "icon": "☠️",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Śmierć na ARIS SMP kosztuje jedno życie. Gdy zabraknie Ci żyć, zostajesz zbanowany na 30 minut. System kar za śmierć dodaje emocji i wagi decyzjom w grze."
+        },
+        {
+          "type": "rules",
+          "items": [
+            {
+              "num": "☠️",
+              "title": "Każda śmierć = -1 życie",
+              "desc": "Niezależnie od przyczyny (mob, gracz, upadek, topienie, itp.) tracisz 1 życie. Wypadają też itemy — możesz je odzyskać przed wygaśnięciem.",
+              "severity": "info"
+            },
+            {
+              "num": "🪦",
+              "title": "Itemy i respawn",
+              "desc": "Po śmierci itemy wypadają w tym miejscu przez 5 minut. Możesz wrócić i je podnieść. Respawnujesz się przy łóżku lub na spawnie serwera.",
+              "severity": "info"
+            },
+            {
+              "num": "⏱️",
+              "title": "0 żyć = ban 30 min",
+              "desc": "Gdy masz 0 żyć, zostajesz zbanowany na 30 minut. Po powrocie liczba żyć resetuje się do 3 (niezależnie ile miałeś przed banem).",
+              "severity": "ban"
+            }
+          ]
+        }
+      ]
+    },
+    "przepisy": {
+      "title": "WORK IN PROGRES (WIKI)",
+      "subtitle": "Jeszcze nie napisalem cale wiki",
+      "icon": "📜",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "Poniżej znajduje się lista dostępnych przepisów w systemie Brewery. Każdy napój wymaga innych składników i czasu warzenia. "
+        }
+      ]
+    },
+    "lista-systemow": {
+      "title": "Wszystkie Systemy",
+      "subtitle": "Przegląd wszystkich autorskich systemów na ARIS SMP",
+      "icon": "⚙️",
+      "sections": [
+        {
+          "type": "intro",
+          "text": "ARIS SMP ma wiele unikalnych systemów, które tworzą wyjątkową doświadczenie gry. Poniżej znajdziesz przegląd wszystkich z nich."
+        },
+        {
+          "type": "info",
+          "title": "Systemy ekonomiczne",
+          "items": [
+            "TimeIsMoney: Zarabiaj 20$ co 15 minut gry. Maksimum 300$ dziennie.",
+            "ShopChest: Twórz własne sklepy sprzedając przedmioty innym graczom. Opłata 50$ + 5% prowizji.",
+            "PaySign: Tabliczki pobierające pieniądze. Idealne do wynajmu, usług, dostępu. 3% prowizji.",
+            "Handel: Kupuj tanio, sprzedawaj drogo. Handluj surowcami, przetwarzaj je, zarabiaj na marży."
+          ]
+        },
+        {
+          "type": "info",
+          "title": "Systemy kar i bezpieczeństwa",
+          "items": [
+            "Czaszki: Za agresywne PvP dostajesz czaszki. Każde zabienie = -200$ (lub -150$ dla już oznaczonych).",
+            "System Żyć: Każdy gracz startuje z 3 życiami. Każda śmierć = -1 życie. 0 żyć = ban 30 minut.",
+            "Tiery żyć: Odblokuj kolejne tiery aby zwiększyć limit żyć. Do 10 żyć maksymalnie."
+          ]
+        },
+        {
+          "type": "info",
+          "title": "Systemy interaktywne",
+          "items": [
+            "Brewery: Warzyć napoje o efektach. Handluj napojami — to świetny biznes!",
+            "Pluginy: ViaVersion (wieloversyjność), Core Protect (historia bloków), i wiele więcej."
+          ]
+        },
+        {
+          "type": "tip",
+          "text": "💡 Best practise: Łącz wiele systemów — TimeIsMoney + handel + Brewery = ogromne zarobki!"
+        }
+      ]
+    }
+  }
+}
